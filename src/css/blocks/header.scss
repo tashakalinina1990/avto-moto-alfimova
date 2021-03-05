@@ -1,0 +1,66 @@
+.header {
+  background-color: #F5F5F9;
+}
+
+.header .container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.header__menu {
+  list-style: none;
+  margin: 0;
+}
+
+.header-menu__list {
+  display: flex;
+  padding-left: 0;
+}
+
+.header-menu__item {
+  padding-left: 68px;
+  padding-top: 31px;
+  font-weight: 600;
+}
+
+.header-menu__item a {
+  color: $main-text;
+}
+
+.logo {
+  width: 133px;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    background-image: url('/img/logo.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    top: 15px;
+  }
+}
+
+.logo__name {
+  display: block;
+  text-transform: uppercase;
+
+  &--avto {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &--moto {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,21 @@
+.footer {
+  background-color: #F5F5F9;
+  min-height: 82px;
+}
+
+.footer__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  font-weight: 600;
+
+  li:not(:last-child) {
+    padding-right: 66px;
+  }
+
+  a {
+    color: #48494D;
+  }
+}
